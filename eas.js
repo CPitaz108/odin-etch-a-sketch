@@ -38,4 +38,7 @@ function updateCounter(value){
   document.getElementById("current-res").textContent = value + "x" + value;
 }
 
+function hoverSquare(color){
+}
+
 createRectangles(10)

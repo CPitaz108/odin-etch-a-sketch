@@ -40,3 +40,12 @@ body {
   text-align: center;
   font-weight: 900;
 }
+
+.screen-box {
+  transition: background-color 5s;
+}
+
+.screen-box:hover {
+  transition: background-color .01s;
+  background-color: red;
+}
