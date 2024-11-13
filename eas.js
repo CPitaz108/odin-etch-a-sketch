@@ -31,6 +31,11 @@ function adjustResolution(event){
   let screen = document.getElementById("eas-screen")
   screen.innerHTML = ""
   createRectangles(parseInt(event.target.value));
+  updateCounter(event.target.value)
+}
+
+function updateCounter(value){
+  document.getElementById("current-res").textContent = value + "x" + value;
 }
 
 createRectangles(10)
