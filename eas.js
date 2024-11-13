@@ -26,8 +26,11 @@ function populateRow(resolution, screen){
   return row;
 }
 
-function adjustResolution(value){
-  
+function adjustResolution(event){
+  //console.log("Res: " + event.target.value + "x" + event.target.value)
+  let screen = document.getElementById("eas-screen")
+  screen.innerHTML = ""
+  createRectangles(parseInt(event.target.value));
 }
 
 createRectangles(10)
