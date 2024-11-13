@@ -26,3 +26,8 @@ function populateRow(resolution, screen){
   return row;
 }
 
+function adjustResolution(value){
+  
+}
+
+createRectangles(10)
