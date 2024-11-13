@@ -1,5 +1,6 @@
 html, body {
   margin: 0px;
+  overflow: hidden;
 }
 
 body {
@@ -8,11 +9,10 @@ body {
 }
 
 #eas-container {
-  border: 1vh solid red;
-  border-radius: 1.5vh/1.5vh;
-  width: 75%;
-  height: 75%;
+  border: 4vw solid red;
+  border-radius: 1.5vh / 1.5vh;
+  width: 40vw;
+  height: 40vw;
   position: relative;
-  left: 12.5%;
-  top: 12.5%;
+  left: 26vw;
 }
