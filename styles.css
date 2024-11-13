@@ -24,3 +24,7 @@ body {
   height: 100%;
   width: 100%;
 }
+
+.screen-row{
+  clip-path: border-box;
+}

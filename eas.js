@@ -12,11 +12,15 @@ function populateRow(resolution, screen){
   row.style.height = (screen.clientHeight / resolution).toString() + "px";
   row.style.boxSizing = "border-box";
   row.style.border = "1px solid black";
+  row.style.display = "flex";
   row.classList.add("screen-row");
   for(let i = 0; i < resolution; i++){
       let box = document.createElement("div");
       box.classList.add("screen-box");
-      box.width;
+      box.style.width = row.style.height;
+      box.style.height = row.style.height;
+      box.style.borderCollapse = "collapse";
+      box.style.border = "1px solid black";
       row.appendChild(box);
   }
   return row;
