@@ -21,9 +21,24 @@ function populateRow(resolution, screen){
       box.style.height = row.style.height;
       box.style.borderCollapse = "collapse";
       box.style.border = "1px solid black";
+      box.addEventListener("mouseenter", (e)=>{fillBox(e)})
+      box.addEventListener("mouseleave", (e)=>{emptyBox(e)})
       row.appendChild(box);
   }
   return row;
+}
+
+
+
+function fillBox(event){
+  event.target.style.backgroundColor = "#ff0000";
+}
+
+function emptyBox(event){
+  event.fromElement.classList.remove("fade")
+  setTimeout(()=>{
+    event.fromElement.classList.add("fade")
+  }, 10);
 }
 
 function adjustResolution(event){

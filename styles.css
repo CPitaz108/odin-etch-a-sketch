@@ -41,11 +41,12 @@ body {
   font-weight: 900;
 }
 
-.screen-box {
-  transition: background-color 5s;
+.fade {
+  animation: fadeOut 2s;
+  animation-fill-mode: forwards;
 }
 
-.screen-box:hover {
-  transition: background-color .01s;
-  background-color: red;
+@keyframes fadeOut {
+  from {background-color: red}
+  to {background-color: #efefef}
 }
